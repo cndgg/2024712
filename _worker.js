@@ -81,7 +81,7 @@ export default {
 					default:
 						// return new Response('Not found', { status: 404 });
 						// For any other path, reverse proxy to 'www.visa.com' and return the original response
-						url.hostname = 'www.bing.com';
+						url.hostname = 'www.cn.bing.com';
 						url.protocol = 'https:';
 
 						const newHeaders = new Headers(request.headers);
