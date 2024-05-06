@@ -6,7 +6,7 @@ import { connect } from 'cloudflare:sockets';
 // [Windows] Press "Win + R", input cmd and run:  Powershell -NoExit -Command "[guid]::NewGuid()"
 let userID = '937b71ae-a8d7-4356-8fbe-82b6d49f77dc';  
 
-const proxyIPs = ['23.162.136.169','cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org', 'edgetunnel.anycast.eu.org',  'workers.cloudflare.cyou'];
+const proxyIPs = ['23.162.136.169','cdn.xn--b6gac.eu.org', 'cdn-all.xn--b6gac.eu.org'];
 
 let proxyIP = proxyIPs[Math.floor(Math.random() * proxyIPs.length)];
 
@@ -81,7 +81,7 @@ export default {
 					default:
 						// return new Response('Not found', { status: 404 });
 						// For any other path, reverse proxy to 'www.visa.com' and return the original response
-						url.hostname = 'www.github.com';
+						url.hostname = 'www.bing.com';
 						url.protocol = 'https:';
 
 						const newHeaders = new Headers(request.headers);
